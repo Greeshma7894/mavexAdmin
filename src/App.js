@@ -1,24 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Plan from './components/Plan';
+import CreatePlan from './components/CreatePlan';
+import PlanSubmission from './components/PlanSubmission';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Plan />} />
+        <Route path="/create-plan" element={<CreatePlan />} />
+        <Route path="/plan-submission" element={<PlanSubmission />} />
+      </Routes>
+    </Router>
   );
 }
 
