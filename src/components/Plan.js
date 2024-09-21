@@ -29,7 +29,7 @@ const Plan = () => {
       </h1>
       
       <button
-        className="absolute top-6 right-6 sm:right-8 bg-blue-500 hover:bg-red-500 text-white py-2 px-4 sm:py-2 sm:px-5 rounded-lg"
+        className="absolute top-6 right-6 sm:right-8 bg-black  text-white py-2 px-4 sm:py-2 sm:px-5 rounded-lg"
         onClick={() => navigate('/create-plan')} // Navigate to the CreatePlan page
       >
         Create +
